@@ -1,6 +1,6 @@
 import React, { useRef, useState } from 'react';
 
-import bin2dec from '../../packages/beginner/bin2dec';
+import bin2dec from '~/packages/beginner/bin2dec';
 
 import './bin2dec.less';
 

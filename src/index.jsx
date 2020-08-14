@@ -2,8 +2,8 @@ import React from 'react';
 import { render } from 'react-dom';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
-import Home from './home';
-import Demo from './demo';
+import List from './routers/list';
+import Show from './routers/show';
 
 import './index.less';
 
@@ -14,10 +14,10 @@ const App = () => {
         <Router>
             <Switch>
                 <Route exact path="/:level/:demoId">
-                    <Demo />
+                    <Show />
                 </Route>
                 <Route path="/">
-                    <Home />
+                    <List />
                 </Route>
             </Switch>
         </Router>

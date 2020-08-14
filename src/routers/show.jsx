@@ -1,8 +1,9 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
 
-import BeginnerDemo from './beginners';
-import './demo.less';
+import BeginnerDemo from '../demos/beginners';
+
+import './show.less';
 
 const compMap = {
     beginner: BeginnerDemo
@@ -10,12 +11,13 @@ const compMap = {
 
 const Demo = () => {
     const { level, demoId } = useParams();
+    const unexistdemo = 'Demo unexist!';
     if (!compMap[level]) {
-        return <div className="">没有该示列</div>;
+        return <div className="">{unexistdemo}</div>;
     }
     const Comp = compMap[level][demoId];
     if (!Comp) {
-        return <div className="">没有该示列</div>;
+        return <div className="">{unexistdemo}</div>;
     }
     return (
         <div className="demo-wrap">
