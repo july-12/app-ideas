@@ -3,7 +3,6 @@
 module.exports = bin2Dec;
 
 function bin2Dec(value) {
-    console.log(value);
     // binary: 1 or 0, just check length less than 8
     const isValidBinary = /^[10]{1,8}$/.test(value);
     if (isValidBinary) {

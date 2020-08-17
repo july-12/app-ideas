@@ -3,9 +3,9 @@ import { Link } from 'react-router-dom';
 
 import './list.less';
 
-const Home = () => {
+const List = () => {
     return (
-        <div className="home">
+        <div className="idea-list">
             <section>
                 <h3>Tier-1: Beginner Projects</h3>
                 <table>
@@ -38,4 +38,4 @@ const Home = () => {
     );
 };
 
-export default Home;
+export default List;

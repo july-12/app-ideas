@@ -17,6 +17,7 @@
     "registry": "https://registry.npm.taobao.org/"
   },
   "scripts": {
+    "tsc": "tsc",
     "test": "echo \"Error: run tests from root\" && exit 1"
   }
 }

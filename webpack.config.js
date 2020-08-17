@@ -8,7 +8,7 @@ module.exports = {
         minimizer: [new OptimizeCSSAssetsPlugin({})]
     },
 
-    entry: './src/index.jsx',
+    entry: './src/index.tsx',
 
     devServer: {
         historyApiFallback: true,
@@ -18,7 +18,7 @@ module.exports = {
     },
 
     resolve: {
-        extensions: ['.js', '.jsx']
+        extensions: ['.js', '.jsx', '.ts', '.tsx']
     },
 
     output: {
@@ -41,7 +41,7 @@ module.exports = {
                     }
                 ]
             },
-            { test: /\.jsx$/, use: 'babel-loader', exclude: [/node_modules/] }
+            { test: /\.(js|jsx|ts|tsx)$/, use: 'babel-loader', exclude: [/node_modules/] }
         ]
     },
 
@@ -51,8 +51,6 @@ module.exports = {
             filename: 'index.html'
         }),
         new MiniCssExtractPlugin({
-            // Options similar to the same options in webpackOptions.output
-            // both options are optional
             filename: '[name].[contenthash:8].css',
             chunkFilename: '[id].[contenthash:8].css'
         })
