@@ -1,6 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
+import beginnerDemos from '../demos/beginners';
+
 import './list.less';
 
 const List = () => {
@@ -17,20 +19,15 @@ const List = () => {
                         </tr>
                     </thead>
                     <tbody>
-                        <tr>
-                            <td>
-                                <Link to="/beginner/Bin2Dec">Bin2Dec</Link>
-                            </td>
-                            <td>Binary-to-Decimal number converter</td>
-                            <td>1-Beginner</td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <Link to="/beginner/demo2">Border Radius Previewer</Link>
-                            </td>
-                            <td>Preview how CSS3 border-radius values affect an element</td>
-                            <td>1-Beginner</td>
-                        </tr>
+                        {beginnerDemos.map((demo) => (
+                            <tr>
+                                <td>
+                                    <Link to={`/beginners/${demo.title}`}>{demo.title}</Link>
+                                </td>
+                                <td>{demo.desc}</td>
+                                <td>1-Beginner</td>
+                            </tr>
+                        ))}
                     </tbody>
                 </table>
             </section>
