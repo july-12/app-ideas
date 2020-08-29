@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-import beginnerDemos from '../demos/beginners';
+import beginnerDemos from '../demos/beginner';
 
 import './list.less';
 
@@ -22,7 +22,7 @@ const List = () => {
                         {beginnerDemos.map((demo) => (
                             <tr>
                                 <td>
-                                    <Link to={`/beginners/${demo.title}`}>{demo.title}</Link>
+                                    <Link to={`/beginner/${demo.title}`}>{demo.title}</Link>
                                 </td>
                                 <td>{demo.desc}</td>
                                 <td>1-Beginner</td>

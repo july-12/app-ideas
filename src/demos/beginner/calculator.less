@@ -1,0 +1,76 @@
+@width: 300px;
+@key-width: 45px;
+@opt-color: #ff7f50;
+
+.calculator {
+    width: @width;
+    height: @width * 1.8;
+    margin: 0 auto;
+    border-radius: 6px;
+    border: 1px solid #f1f2f6;
+
+    .screen {
+        height: 45%;
+        overflow-y: auto;
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+
+        .prev-input {
+            flex: 1;
+        }
+
+        .current-input {
+            min-height: 32px;
+            text-align: right;
+            font-size: 20px;
+            font-weight: 800;
+        }
+        .input-opt {
+            margin: 0 6px;
+        }
+    }
+    .keyboard {
+        border-top: 1px solid #dfe4ea;
+        height: 55%;
+        background: #f1f2f6;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        &-row {
+            display: flex;
+            height: 100% / 5;
+            justify-content: space-around;
+            align-items: center;
+
+            &-column {
+                cursor: pointer;
+                width: @key-width;
+                height: @key-width;
+                border-radius: 50%;
+                background: transparent;
+                display: flex;
+                font-size: 16px;
+                font-weight: bold;
+                justify-content: center;
+                align-items: center;
+                transition: 0s 0.2s;
+                color: @opt-color;
+                &-number {
+                    color: #57606f;
+                }
+                &-eq {
+                    border-radius: 50%;
+                    background: @opt-color;
+                    color: #fff;
+                }
+                &:active {
+                    background: #57606f;
+                    opacity: 0.6;
+                    color: #fff;
+                    transition: all 0s ease-in-out;
+                }
+            }
+        }
+    }
+}

@@ -2,8 +2,6 @@ import React from 'react';
 
 import BorderRadiusPreviewer from '~/packages/beginner/borderRadiusPreviewer';
 
-import './borderRadiusPreviewer.css';
-
 const BorderRadiusPreviewerDemo = () => {
     return (
         <div>

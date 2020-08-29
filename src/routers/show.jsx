@@ -1,12 +1,12 @@
 import * as React from 'react';
 import { useParams } from 'react-router-dom';
 
-import beginnerDemos from '../demos/beginners';
+import beginnerDemo from '../demos/beginner';
 
 import './show.less';
 
 const compMap = {
-    beginners: beginnerDemos
+    beginner: beginnerDemo
 };
 
 const Demo = () => {
