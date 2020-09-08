@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 
+import binmasks from '~/packages/intermediate/bitmasks';
+
 import './bitMasks.less';
 
 const BitMasksDemo = () => {
@@ -29,11 +31,7 @@ const BitMasksDemo = () => {
         setMask(value);
     };
 
-    const checkGMT = (gmt, mask) => {
-        return (gmt & mask) === +mask;
-    };
-
-    const filterData = mask ? data.filter(({ GMT }) => checkGMT(GMT, mask)) : data;
+    const filterData = mask ? data.filter(({ GMT }) => binmasks(GMT, +mask)) : data;
 
     return (
         <div className="masks">

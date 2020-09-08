@@ -27,7 +27,7 @@ const List = () => {
                     <table>
                         <thead>
                             <tr>
-                                <th style={{ color: 'red' }}>Name</th>
+                                <th>Name</th>
                                 <th>Short Description</th>
                                 <th>Tier</th>
                             </tr>

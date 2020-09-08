@@ -1,0 +1,29 @@
+{
+  "name": "bitmasks",
+  "version": "0.0.0",
+  "description": "> TODO: description",
+  "author": "Faith <seventanyb@gmail.com>",
+  "homepage": "https://github.com/july-12/app-ideas#readme",
+  "license": "ISC",
+  "main": "lib/bitmasks.js",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib"
+  ],
+  "publishConfig": {
+    "registry": "http://rnpm.uyundev.cn/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/july-12/app-ideas.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: run tests from root\" && exit 1"
+  },
+  "bugs": {
+    "url": "https://github.com/july-12/app-ideas/issues"
+  }
+}
