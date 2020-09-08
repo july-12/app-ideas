@@ -2,11 +2,13 @@ import * as React from 'react';
 import { useParams } from 'react-router-dom';
 
 import beginnerDemo from '../demos/beginner';
+import intermediateDemo from '../demos/intermediate';
 
 import './show.less';
 
 const compMap = {
-    beginner: beginnerDemo
+    Beginner: beginnerDemo,
+    Intermediate: intermediateDemo
 };
 
 const Demo = () => {
