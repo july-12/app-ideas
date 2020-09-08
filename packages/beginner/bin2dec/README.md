@@ -1,13 +1,13 @@
 # `bin2dec`
 
-> TODO: description
+It is a method which convert binary value decimal
 
 ## Usage
 
 ```
 const bin2Dec = require('bin2dec');
 
-// TODO: DEMONSTRATE API
+const decimal = bin2Dec(value)
 ```
 
 ## knowledge

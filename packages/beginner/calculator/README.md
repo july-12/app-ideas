@@ -1,11 +1,11 @@
 # `calculator`
 
-> TODO: description
+this is example copy from  calculate app of xiaomi mobile os
 
 ## Usage
 
 ```
-const calculator = require('calculator');
+import Calculator form 'calculator';
 
-// TODO: DEMONSTRATE API
+<Calculator />
 ```

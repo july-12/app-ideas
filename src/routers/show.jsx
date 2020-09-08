@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { useParams } from 'react-router-dom';
+import { useParams, Link } from 'react-router-dom';
 
 import beginnerDemo from '../demos/beginner';
 import intermediateDemo from '../demos/intermediate';
@@ -30,7 +30,10 @@ const Demo = () => {
 
     return (
         <div className="demo-wrap">
-            <h3>{demoTitle}</h3>
+            <h3>
+                {demoTitle}
+                <Link to="/">back</Link>
+            </h3>
             <Comp />
         </div>
     );

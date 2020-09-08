@@ -1,11 +1,11 @@
 # `borderRadiusPreviewer`
 
-> TODO: description
+it is a Component show how border of element be control by 4 value
 
 ## Usage
 
 ```
-const borderRadiusPreviewer = require('borderRadiusPreviewer');
+import BorderRadiusPreviewer = from 'borderRadiusPreviewer';
 
-// TODO: DEMONSTRATE API
+<BorderRadiusPreviewer />
 ```
