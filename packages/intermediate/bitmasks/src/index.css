@@ -1,0 +1,39 @@
+.masks {
+    padding: 10px;
+}
+.masks input {
+    width: 200px;
+    height: 30px;
+    line-height: 30px;
+}
+
+.masks ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    margin-top: 8px;
+}
+.masks ul li {
+    padding: 4px;
+    padding-left: 0;
+    margin-bottom: 4px;
+}
+.masks ul li.head {
+    font-size: 18px;
+    font-weight: bold;
+}
+.masks ul li .title {
+    min-width: 120px;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.masks ul li .title:after {
+    content: ': ';
+}
+
+.masks ul li .gmt {
+    width: 30px;
+    text-align: right;
+    display: inline-block;
+}

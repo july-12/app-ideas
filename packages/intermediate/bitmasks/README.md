@@ -1,11 +1,11 @@
-# `bitmasks`
+# `borderRadiusPreviewer`
 
-It is demonstrate how to use bit masks to evaluate longer sequences of switches without having to rely on long strings of conditional statements.
+it is a Component show how border of element be control by 4 value
 
 ## Usage
 
 ```
-const bitmasks = require('bitmasks');
+import BorderRadiusPreviewer = from 'borderRadiusPreviewer';
 
-// TODO: DEMONSTRATE API
+<BorderRadiusPreviewer />
 ```
